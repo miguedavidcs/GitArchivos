@@ -1,0 +1,355 @@
+uario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/AprenderGit
+$ git init
+Initialized empty Git repository in C:/Users/Usuario/OneDrive/Escritorio/AprenderGit/.git/
+
+Usuario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/AprenderGit (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        JavaAngularInfo.js.txt
+        cascada.css.txt
+        manual-git.pdf
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Usuario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/AprenderGit (master)
+$ git add JavaAngularInfo.js.txt
+
+Usuario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/AprenderGit (master)
+$ git add cascada.css.txt
+
+Usuario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/AprenderGit (master)
+$ git add manual-git.pdf
+
+Usuario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/AprenderGit (master)
+$ git config --global user.mail midacasa17@gmail.com
+
+Usuario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/AprenderGit (master)
+$ git config --global user.name "migueldavidcs"
+
+Usuario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/AprenderGit (master)
+$ git commit
+[master (root-commit) 657e93c] My primer commit en esta carpeta
+ 3 files changed, 1 insertion(+)
+ create mode 100644 JavaAngularInfo.js.txt
+ create mode 100644 cascada.css.txt
+ create mode 100644 manual-git.pdf
+
+Usuario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/AprenderGit (master)
+$ git log
+commit 657e93cc9e22e2e6fa7c09fbccee52feda0b6494 (HEAD -> master)
+Author: migueldavidcs <midacasa17@gmail.com>
+Date:   Wed Aug 17 14:57:26 2022 -0500
+
+    My primer commit en esta carpeta
+
+Usuario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/AprenderGit (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Usuario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/AprenderGit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   JavaAngularInfo.js.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Usuario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/AprenderGit (master)
+$ git restore ^C
+
+Usuario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/AprenderGit (master)
+$ git restore JavaAngularInfo.js.txt
+
+Usuario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/AprenderGit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   JavaAngularInfo.js.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Usuario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/AprenderGit (master)
+$ git diff ^C
+
+Usuario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/AprenderGit (master)
+$ git diff modified:   JavaAngularInfo.js.txt
+fatal: invalid object name 'modified'.
+
+Usuario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/AprenderGit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   JavaAngularInfo.js.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Usuario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/AprenderGit (master)
+$ git add JavaAngularInfo.js.txt
+
+Usuario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/AprenderGit (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   JavaAngularInfo.js.txt
+
+
+Usuario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/AprenderGit (master)
+$ git commit
+[master 93793c8] esto es un archico de prueba modificado
+ 1 file changed, 73 insertions(+), 1 deletion(-)
+
+Usuario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/AprenderGit (master)
+$ git log
+commit 93793c8309089360178f42d50f5700ba364f4acb (HEAD -> master)
+Author: migueldavidcs <midacasa17@gmail.com>
+Date:   Wed Aug 17 15:08:46 2022 -0500
+
+    esto es un archico de prueba modificado
+
+commit 657e93cc9e22e2e6fa7c09fbccee52feda0b6494
+Author: migueldavidcs <midacasa17@gmail.com>
+Date:   Wed Aug 17 14:57:26 2022 -0500
+
+    My primer commit en esta carpeta
+
+Usuario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/AprenderGit (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Usuario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/AprenderGit (master)
+$ git add .
+
+Usuario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/AprenderGit (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        DocumentosPHv.txt
+
+
+Usuario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/AprenderGit (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .gitignore.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        DocumentosPHv.txt
+
+
+Usuario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/AprenderGit (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .gitignore.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        DocumentosPHv.txt
+
+
+Usuario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/AprenderGit (master)
+$ git add .gitignore.txt
+
+Usuario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/AprenderGit (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        DocumentosPHv.txt
+
+
+Usuario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/AprenderGit (master)
+$ git add ,
+fatal: pathspec ',' did not match any files
+
+Usuario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/AprenderGit (master)
+$ git add .
+
+Usuario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/AprenderGit (master)
+$ git commit "he agregado un .gitignore"
+error: pathspec 'he agregado un .gitignore' did not match any file(s) known to git
+
+Usuario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/AprenderGit (master)
+$ git commit "he agregado un gitignore"
+error: pathspec 'he agregado un gitignore' did not match any file(s) known to git
+
+Usuario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/AprenderGit (master)
+$ git commit -m "he agregado un gitignore"
+[master ba0723f] he agregado un gitignore
+ 2 files changed, 2 insertions(+)
+ create mode 100644 .gitignore.txt
+ create mode 100644 DocumentosPHv.txt
+
+Usuario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/AprenderGit (master)
+$ git branch
+* master
+
+Usuario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/AprenderGit (master)
+$ git branch login
+
+Usuario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/AprenderGit (master)
+$ git branch
+  login
+* master
+
+Usuario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/AprenderGit (master)
+$ git checkout login
+Switched to branch 'login'
+
+Usuario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/AprenderGit (login)
+$ git branch
+* login
+  master
+
+Usuario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/AprenderGit (login)
+$ git status
+On branch login
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        login/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Usuario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/AprenderGit (login)
+$ git git add .
+git: 'git' is not a git command. See 'git --help'.
+
+The most similar command is
+        init
+
+Usuario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/AprenderGit (login)
+$ git add .
+
+Usuario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/AprenderGit (login)
+$ git commit -m "se esta modicando en una rama llamada login"
+[login dbefc63] se esta modicando en una rama llamada login
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 login/tty.txt
+
+Usuario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/AprenderGit (login)
+$ git log
+commit dbefc6382b944e793504724f7bc3b27b8f9a8120 (HEAD -> login)
+Author: migueldavidcs <midacasa17@gmail.com>
+Date:   Wed Aug 17 15:23:36 2022 -0500
+
+    se esta modicando en una rama llamada login
+
+commit ba0723f75ee16852d64f5028e0c06fb068da852f (master)
+Author: migueldavidcs <midacasa17@gmail.com>
+Date:   Wed Aug 17 15:19:00 2022 -0500
+
+    he agregado un gitignore
+
+commit 93793c8309089360178f42d50f5700ba364f4acb
+Author: migueldavidcs <midacasa17@gmail.com>
+Date:   Wed Aug 17 15:08:46 2022 -0500
+
+    esto es un archico de prueba modificado
+
+commit 657e93cc9e22e2e6fa7c09fbccee52feda0b6494
+Author: migueldavidcs <midacasa17@gmail.com>
+Date:   Wed Aug 17 14:57:26 2022 -0500
+
+    My primer commit en esta carpeta
+...skipping...
+commit dbefc6382b944e793504724f7bc3b27b8f9a8120 (HEAD -> login)
+Author: migueldavidcs <midacasa17@gmail.com>
+Date:   Wed Aug 17 15:23:36 2022 -0500
+
+    se esta modicando en una rama llamada login
+
+commit ba0723f75ee16852d64f5028e0c06fb068da852f (master)
+Author: migueldavidcs <midacasa17@gmail.com>
+Date:   Wed Aug 17 15:19:00 2022 -0500
+
+    he agregado un gitignore
+
+commit 93793c8309089360178f42d50f5700ba364f4acb
+Author: migueldavidcs <midacasa17@gmail.com>
+Date:   Wed Aug 17 15:08:46 2022 -0500
+
+    esto es un archico de prueba modificado
+
+commit 657e93cc9e22e2e6fa7c09fbccee52feda0b6494
+Author: migueldavidcs <midacasa17@gmail.com>
+Date:   Wed Aug 17 14:57:26 2022 -0500
+
+    My primer commit en esta carpeta
+
+Usuario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/AprenderGit (login)
+$ git branch
+* login
+  master
+
+Usuario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/AprenderGit (login)
+$ git checkout master
+Switched to branch 'master'
+
+Usuario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/AprenderGit (master)
+$ git remote add origin https://github.com/miguedavidcs/GitArchivos.git
+
+Usuario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/AprenderGit (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Usuario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/AprenderGit (master)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/miguedavidcs/GitArchivos.git'
+
+Usuario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/AprenderGit (master)
+$ git push -u origin master
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (11/11), 354.63 KiB | 15.42 MiB/s, done.
+Total 11 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/miguedavidcs/GitArchivos.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+Usuario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/AprenderGit (master)
+$

@@ -1,1 +1,73 @@
-console.log("Hola semillero de Angular y JAVA")
+console.log("Informacion solo de Git")
+primera configuracion actualizando codigo.
+Usuario@DESKTOP
+$ git init
+Initialized empty Git repository in C:/Users/Usuario/OneDrive/Escritorio/AprenderGit/.git/
+
+(master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        JavaAngularInfo.js.txt
+        cascada.css.txt
+        manual-git.pdf
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+(master)
+$ git add JavaAngularInfo.js.txt
+
+(master)
+$ git add cascada.css.txt
+
+ (master)
+$ git add manual-git.pdf
+
+(master)
+$ git config --global user.mail midacasa17@gmail.com
+
+(master)
+$ git config --global user.name "migueldavidcs"
+
+(master)
+$ git commit
+[master (root-commit) 657e93c] My primer commit en esta carpeta
+ 3 files changed, 1 insertion(+)
+ create mode 100644 JavaAngularInfo.js.txt
+ create mode 100644 cascada.css.txt
+ create mode 100644 manual-git.pdf
+
+(master)
+$ git log
+commit 657e93cc9e22e2e6fa7c09fbccee52feda0b6494 (HEAD -> master)
+Author: migueldavidcs <midacasa17@gmail.com>
+Date:   Wed Aug 17 14:57:26 2022 -0500
+
+    My primer commit en esta carpeta
+
+(master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+(master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   JavaAngularInfo.js.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Usuario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/AprenderGit (master)
+$ git restore ^C
+
+Usuario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/AprenderGit (master)
+$ git restore JavaAngularInfo.js.txt
+
+Usuario@DESKTOP-L662BJ1 MINGW64 ~/OneDrive/Escritorio/AprenderGit (master)

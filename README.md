@@ -8,7 +8,7 @@ codigos y estos pueden ver los cambios.
 
 ## Sistemas de control de versiones locales. 
 
-###El método de control de versiones usado por mucha gente es 
+### El método de control de versiones usado por mucha gente es 
 copiar los archivos  a otro directorio (quizás indicando la fecha y hora en que lo hicieron, si son 
 avispados).
 
@@ -23,7 +23,7 @@ ayuda de la herramienta diff.
 
 ## Sistemas de Control de Versiones Centralizados
 
-###El siguiente gran problema con el que se encuentran las personas que necesitan colaborar con desarrolladores 
+### El siguiente gran problema con el que se encuentran las personas que necesitan colaborar con desarrolladores 
 en otros sistemas. Los sistemas de Control de Versiones Centralizados (CVCS por sus siglas en inglés) fueron 
 desarrollados para solucionar este problema. Estos sistemas, como CVS, Subversion y Perforce, tienen un único
 servidor que contiene todos los archivos versionados y varios clientes que descargan los archivos desde ese
